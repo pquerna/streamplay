@@ -4,3 +4,4 @@
 *.a
 _go_.6
 bin/
+local_settings.sh-dev
