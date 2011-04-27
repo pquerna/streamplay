@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Stats Dashboard</title>
+<style>
+  .metrics {
+    padding-left: 20px;
+    border-left: 1px solid lightgray;
+  }
+
+  .metrics > div {
+    clear: left;
+  }
+
+  .metrics div div {
+    width: 100px;
+    float: left;
+  }
+</style>
+</head>
+<body>
+<?.repeated section @?>
+<div style="clear:both;"><?K?></div>
+<div class="metrics">
+  <?.repeated section V?>
+  <div>
+    <div><?K?></div>
+    <div><?V?></div>
+  </div>
+  <?.end?>
+  <hr style="clear:both; visibility: hidden; height: 1px; width: 1px;" />
+</div>
+<?.or?>
+<h3>Empty</h3>
+<?.end?>
+</body>
+</html>
