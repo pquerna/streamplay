@@ -3,3 +3,4 @@
 .sconsign.dblite
 *.a
 _go_.6
+bin/
